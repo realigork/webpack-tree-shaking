@@ -1,12 +1,37 @@
 {
-  "name": "TreeShaking",
+  "name": "webpack-tree-shaking",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development npx webpack --mode development",
+    "build": "NODE_ENV=production npx webpack --mode production",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-emotion": "^9.2.6",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "emotion": "^9.2.6",
+    "express": "^4.16.3",
+    "html-webpack-plugin": "^3.2.0",
+    "preact": "^8.2.9",
+    "preact-emotion": "^9.2.6",
+    "prop-types": "^15.6.2",
+    "regenerator-runtime": "^0.12.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "safari >= 9"
+  ]
 }
